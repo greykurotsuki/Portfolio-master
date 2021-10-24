@@ -1,0 +1,24 @@
+.about .container {
+  background-color: white;
+}
+
+.about .container .year-description h2 {
+  margin: 50px auto;
+  width: 90%;
+  text-align: center;
+  color: #69ad7c;
+  border-bottom: 3px solid #69ad7c;
+  line-height: 0.1em;
+}
+
+.about .container .year-description h2 span {
+  padding: 0 10px;
+  background-color: white;
+}
+
+.about .container .year-description p {
+  text-align: justify;
+  background-color: #69ad7c21;
+  padding: 10px;
+}
+/*# sourceMappingURL=about.css.map */

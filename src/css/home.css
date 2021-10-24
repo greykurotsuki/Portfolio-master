@@ -1,0 +1,78 @@
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #263238;
+}
+
+#mainNav {
+  background-color: #263238;
+  height: 100px;
+  padding: 0;
+}
+
+#mainNav .navbar-brand {
+  font-size: 25px;
+  font-family: 'Rockwell', serif;
+  color: white;
+}
+
+#mainNav .container {
+  height: 100px;
+}
+
+#mainNav .nav-item {
+  height: 100px;
+  transition: .2s;
+}
+
+#mainNav .nav-item:hover {
+  background-color: white;
+}
+
+#mainNav .nav-item:hover .nav-link {
+  color: black;
+}
+
+#mainNav .nav-item .nav-link {
+  line-height: 80px;
+  transition: .2s;
+  color: white;
+  font-size: 20px;
+}
+
+#mainNav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.welcome-img-wrapper {
+  width: 750px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.welcome-img-wrapper .welcome-img {
+  width: 750px;
+  height: 600px;
+}
+
+.home .container {
+  background-color: white;
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.home h1 {
+  color: #263238;
+}
+
+.home a {
+  color: black;
+  font-weight: 400;
+}
+/*# sourceMappingURL=home.css.map */

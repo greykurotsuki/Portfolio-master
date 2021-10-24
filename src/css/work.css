@@ -1,0 +1,49 @@
+.work {
+  padding-top: 30px;
+}
+
+.work .projects-list {
+  padding-top: 50px;
+}
+
+.work .project {
+  background-color: #1bb44648;
+  padding: 30px;
+}
+
+.work .project .btn {
+  margin-top: 10px;
+  background-color: #263238;
+  border: none;
+  padding: 15px 50px;
+  font-size: 20px;
+  color: white;
+}
+
+.work .project .btn:hover {
+  background-color: #263238bb;
+}
+
+.work .project .btn:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+
+.work .project-img-wrapper {
+  margin: 0 auto;
+}
+
+.work .project-img-wrapper img {
+  width: 100%;
+  box-shadow: 0px 0px 3px 3px black;
+}
+
+.work .project-name {
+  padding-top: 10px;
+  font-size: 40px;
+}
+
+.work .project-name a {
+  color: #263238;
+}
+/*# sourceMappingURL=work.css.map */

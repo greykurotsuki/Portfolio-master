@@ -1,0 +1,28 @@
+$green-dark: #69ad7c;
+$green-transparent: #69ad7c21;
+
+
+.about {
+    .container {
+        background-color: white;
+        .year-description {
+            h2 {
+                margin: 50px auto;
+                width: 90%; 
+                text-align: center; 
+                color: $green-dark;
+                border-bottom: 3px solid $green-dark;
+                line-height: 0.1em;
+                & span {
+                    padding:0 10px; 
+                    background-color: white;
+                }
+             }
+             p {
+                 text-align: justify;
+                 background-color: $green-transparent;
+                 padding: 10px;
+             }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+$green-dark: #263238;
+$green-light: #92e3a9;
+
+html {
+    overflow-y:scroll;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #263238;
+}
+
+
+
+#mainNav {
+    background-color: $green-dark;
+    height: 100px;
+    padding: 0;
+    .navbar-brand {
+        font-size: 25px;
+        font-family: 'Rockwell', serif;
+        color: white;
+    }
+    
+    .container {
+        height: 100px;
+    }
+    .nav-item {
+        height: 100px;
+        transition: .2s;
+        &:hover {
+            background-color: white;
+            & .nav-link {
+                color: black;
+            }
+        }
+        .nav-link {
+            line-height: 80px;
+            transition: .2s;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+.welcome-img-wrapper {
+    width: 750px;
+    height: 600px;
+    margin: 0 auto;
+    .welcome-img {
+        width: 750px;
+        height: 600px;
+    }
+}
+
+.home {
+    .container {
+        background-color: white;
+        height: 100vh;
+        margin-bottom: 0;
+    }
+    h1 {
+        color: $green-dark;
+    }
+    a {
+        color: black;
+        font-weight: 400;
+    }
+}
