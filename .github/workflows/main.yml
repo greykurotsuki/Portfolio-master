@@ -3,7 +3,7 @@ env:
   EB_PACKAGE_S3_BUCKET_NAME : "adv-it-html-site"
   EB_APPLICATION_NAME       : "JavascriptTesting" 
   EB_ENVIRONMENT_NAME       : "Javascripttesting-env"
-  DEPLOY_PACKAGE_NAME       : "html-app_${{ github.sha }}.zip"
+  DEPLOY_PACKAGE_NAME       : "js-app_${{ github.sha }}.zip"
   AWS_REGION_NAME           : "eu-west-3"
 
 on: 
