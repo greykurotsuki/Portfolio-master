@@ -21,6 +21,9 @@ provider "aws" {
   region                  = "eu-west-3"
 }
 
+#############################################
+#                Instance
+#############################################
 resource "aws_instance" "web-server" {
   ami                     = "ami-0df7d9cc2767d161cd"  # Ubuntu 18.04
   instance_type           = "t2.micro"
@@ -31,7 +34,7 @@ resource "aws_instance" "web-server" {
 } 
 
 #############################################
-#                Instance
+#             Security Group
 #############################################
 resource "aws_security_group" "webserver" {
   name               = "webserver1"
