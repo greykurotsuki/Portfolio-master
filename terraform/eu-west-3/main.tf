@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket         = "temp-tfstate-lock"
-    key            = "backend/terraform.tfstate"
+    key            = "eu-west-3/terraform.tfstate"
     dynamodb_table = "aws-terraform-states-lock"
     encrypt        = true
     region         = "eu-west-3"
@@ -16,8 +16,6 @@ terraform {
 }
 
 provider "aws" {
-  shared_credentials_file = "~/.aws/credentials"
-  profile                 = "kurtsuki"
   region                  = "eu-west-3"
 }
 
