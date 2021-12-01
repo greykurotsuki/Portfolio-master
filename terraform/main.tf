@@ -30,38 +30,9 @@ resource "aws_instance" "web-server" {
   user_data               = file("user_data.sh")
 } 
 
-# Create a s3 bucket to keep .tfstate file
-resource "aws_s3_bucket" "s3-tfstate" {
-  bucket = "temp-tfstate-lock"
-  acl    = "private"
-  
-  object_lock_configuration{
-    object_lock_enabled = "Enabled"
-  }
-
-  versioning {
-    enabled = true
-  }
-
-  tags = {
-    Name        = "temp-tfstate"
-    Environment = "Dev"
-  }
-}
-
-# Create a DynamoDB table to lock tfstate file at S3 bucket
-resource "aws_dynamodb_table" "aws-terraform-states-lock" {
-  name = "aws-terraform-states-lock"
-  hash_key = "LockID"
-  read_capacity = 20
-  write_capacity = 20
- 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-}
-
+#############################################
+#                Instance
+#############################################
 resource "aws_security_group" "webserver" {
   name               = "webserver1"
 
